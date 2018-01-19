@@ -1,4 +1,4 @@
-FROM rocker/tidyverse:3.4.2
+FROM rocker/shiny
 
 RUN apt-get update 
 
