@@ -13,6 +13,8 @@ RUN echo "options(repos = c(CRAN = 'https://cran.rstudio.com/'), shiny.host = '0
 # install rJava R package
 RUN apt-get install -y r-cran-rjava 
 
+RUN mkdir -m 777 -p /home/project/
+
 COPY . /usr/local/src/myscripts
 WORKDIR /usr/local/src/myscripts
 
