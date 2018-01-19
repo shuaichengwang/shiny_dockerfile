@@ -1,5 +1,7 @@
 FROM rocker/shiny
 
+MAINTAINER Freeman Wang "freestatman@gmail.com"
+
 RUN apt-get update 
 
 ## needed lib for devtools r package, and Hmisc
