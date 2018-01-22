@@ -2,17 +2,19 @@
 
 if (TRUE) {
 
-    install.packages("devtools", repos='http://cran.rstudio.com')
+    #    install.packages("devtools", repos='http://cran.rstudio.com')
+    #
+    #    pkg_nms <- c('tidyverse', 'stringr', 'plyr', 'magrittr', 'haven',
+    #                 'styler',
+    #                 'visdat', 'ggpubr', 'colorspace', 'summarytools',
+    #                 'shiny', 'shinydashboard',
+    #                 'shinyjs', 'shinyBS', 'shinythemes', 'shinymaterial',
+    #                 'markdown', 'crosstalk', 'd3heatmap', 'visNetwork',
+    #                 'parallel', 'methods', 'future',
+    #                 'htmltools', 'htmlwidgets', 'DT', 'plotly', 'formattable')
+    #
 
-    pkg_nms <- c('tidyverse', 'stringr', 'plyr', 'magrittr', 'haven',
-                 'styler',
-                 'visdat', 'ggpubr', 'colorspace', 'summarytools',
-                 'shiny', 'shinydashboard',
-                 'shinyjs', 'shinyBS', 'shinythemes', 'shinymaterial',
-                 'markdown', 'crosstalk', 'd3heatmap', 'visNetwork',
-                 'parallel', 'methods', 'future',
-                 'htmltools', 'htmlwidgets', 'DT', 'plotly', 'formattable')
-
+    pkg_nms <- c('plotly', 'DT', 'shinyWidgets', 'haven', 'styler', 'visdat', 'ggpubr', 'summarytools', 'd3heatmap')
     sapply(pkg_nms, install.packages, repos='http://cran.rstudio.com')
 
 
